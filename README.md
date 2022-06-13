@@ -25,15 +25,16 @@ Users should be able to:
 
 Desktop view
 
-![](./screenshots/desktop-view.png.jpg)
+![](./screenshots/desktop-view.png.)
 
 Mobile view
-![](./screenshots/mobile-view.png.jpg)
+
+![](./screenshots/mobile-view.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL here](https://www.frontendmentor.io/solutions/fylo-data-storage-component-JLQ1471uS3)
+- Live Site URL: [Live site URL here](https://fylo-data-storage-component-9j6.pages.dev)
 
 ### Built with
 
