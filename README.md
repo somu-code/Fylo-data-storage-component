@@ -25,7 +25,7 @@ Users should be able to:
 
 Desktop view
 
-![](./screenshots/desktop-view.png.)
+![](./screenshots/desktop-view.png)
 
 Mobile view
 
