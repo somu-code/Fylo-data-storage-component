@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+:root {
+  /* Colors */
+
+  /* Primary */
+
+  /* Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%) */
+
+  /* Neutral */
+
+  --Pale-Blue: hsl(243, 100%, 93%);
+  --Grayish-Blue: hsl(229, 7%, 55%);
+  --Dark-Blue: hsl(228, 56%, 26%);
+  --Very-Dark-Blue: hsl(229, 57%, 11%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  background-color: var(--Very-Dark-Blue);
+  background-image: url(./images/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 50vh;
+  font-family: "Raleway";
+  font-weight: 400;
+}
+.main-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 97vh;
+  display: grid;
+  place-items: center;
+}
+.component {
+  display: flex;
+  margin: auto auto;
+  gap: 30px;
+  width: 900px;
+}
+.logo-svg {
+  background-color: var(--Dark-Blue);
+  padding-block: 40px;
+  padding-left: 32px;
+  padding-right: 100px;
+  border-radius: 12px;
+  border-top-right-radius: 50%;
+}
+.logo,
+.svg {
+  padding: 8px;
+}
+.svg img {
+  background-color: var(--Very-Dark-Blue);
+  padding: 12px;
+  border-radius: 12px;
+}
+.svg {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 12px;
+}
+.description {
+  background-color: var(--Dark-Blue);
+  flex-grow: 1;
+  align-self: flex-end;
+  border-radius: 12px;
+  padding: 24px;
+  position: relative;
+}
+.description-text {
+  font-size: 14px;
+  color: var(--Pale-Blue);
+  margin: 14px;
+}
+.description-text span {
+  color: white;
+  font-weight: 700;
+}
+.range {
+  height: 14px;
+  background-color: var(--Very-Dark-Blue);
+  border-radius: 12px;
+  display: flex;
+  margin: 14px;
+}
+.progress {
+  width: 80%;
+  height: 12px;
+  border-radius: 12px;
+  background-image: linear-gradient(
+    90deg,
+    hsl(6, 100%, 80%),
+    hsl(335, 100%, 65%)
+  );
+}
+.white-dot {
+  width: 2%;
+  height: 11px;
+  background-color: var(--Pale-Blue);
+  border-radius: 50%;
+  margin-right: 2px;
+  float: right;
+}
+.data-rate {
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  margin: 14px;
+  color: var(--Pale-Blue);
+  font-weight: 700;
+}
+.signal {
+  position: absolute;
+  background-color: var(--Pale-Blue);
+  width: 9rem;
+  text-align: center;
+  color: var(--Very-Dark-Blue);
+  font-size: 32px;
+  font-weight: 700;
+  padding: 13px;
+  top: -39px;
+  right: 70px;
+  border-radius: 12px;
+}
+.signal::after {
+  content: "";
+  border-left: 30px solid transparent;
+  border-top: 30px solid var(--Pale-Blue);
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+}
+.signal span {
+  color: var(--Grayish-Blue);
+  font-size: 13px;
+}
+.attribution {
+  font-size: 13px;
+  text-align: center;
+  color: var(--Pale-Blue);
+}
+.attribution a {
+  color: var(--Grayish-Blue);
+}
+@media (max-width: 450px) {
+  body {
+    background-image: url(./images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .main-container {
+    max-width: 375px;
+    margin: 0 auto;
+  }
+  .component {
+    width: 330px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo-svg {
+    width: 100%;
+  }
+  .description {
+    align-self: stretch;
+    width: 100%;
+  }
+  .white-dot {
+    width: 5%;
+  }
+  .signal::after {
+    display: none;
+  }
+  .signal {
+    top: 120px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
